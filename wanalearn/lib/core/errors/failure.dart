@@ -1,10 +1,15 @@
 import 'package:equatable/equatable.dart';
+import 'package:wanalearn/core/errors/exceptions.dart';
 
 class Failure extends Equatable {
-  const Failure({required this.message, required this.statusCode});
+  Failure({required this.message, required this.statusCode})
+      : assert(
+          statusCode is String || statusCode is int,
+          'Status code cannot be a: ${statusCode.runtimeType}',
+        );
 
   final String message;
-  final int statusCode;
+  final dynamic statusCode;
 
   String get errorMessage => '$statusCode ERROR: $message';
 
@@ -13,11 +18,11 @@ class Failure extends Equatable {
 }
 
 class CacheFailure extends Failure {
-  const CacheFailure({required super.message, required super.statusCode});
+  CacheFailure({required super.message, required super.statusCode});
 }
 
 class ServerFailure extends Failure {
-  const ServerFailure({required super.message, required super.statusCode});
+  ServerFailure({required super.message, required super.statusCode});
 
   ServerFailure.fromException(ServerException exception)
       : this(
