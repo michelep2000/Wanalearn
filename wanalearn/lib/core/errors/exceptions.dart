@@ -1,10 +1,14 @@
 import 'package:equatable/equatable.dart';
 
 class ServerException extends Equatable implements Exception {
-  const ServerException({required this.message, required this.statusCode});
+  ServerException({required this.message, required this.statusCode})
+      : assert(
+          statusCode is String || statusCode is int,
+          'Status code cannot be a: ${statusCode.runtimeType}',
+        );
 
   final String message;
-  final int statusCode;
+  final dynamic statusCode;
 
   @override
   List<Object?> get props => [message, statusCode];

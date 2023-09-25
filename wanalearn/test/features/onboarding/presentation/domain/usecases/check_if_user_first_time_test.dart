@@ -2,8 +2,8 @@ import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:wanalearn/core/errors/failure.dart';
-import 'package:wanalearn/features/onboarding/presentation/domain/repositories/onboarding_repository.dart';
-import 'package:wanalearn/features/onboarding/presentation/domain/usecases/check_if_user_first_time.dart';
+import 'package:wanalearn/features/onboarding/domain/repositories/onboarding_repository.dart';
+import 'package:wanalearn/features/onboarding/domain/usecases/check_if_user_first_time.dart';
 
 import 'onboarding_repository.mock.dart';
 
