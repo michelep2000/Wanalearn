@@ -8,6 +8,7 @@ class AppTheme {
       useMaterial3: true,
       visualDensity: VisualDensity.adaptivePlatformDensity,
       fontFamily: Fonts.poppins,
+      scaffoldBackgroundColor: Colors.white,
       appBarTheme: const AppBarTheme(
         color: Colors.transparent,
       ),
