@@ -7,16 +7,16 @@ abstract class AuthenticationRepository {
 
   ResultFuture<void> forgotPassword(String email);
 
-  ResultFuture<LocalUser> signIn(
-    String email,
-    String password,
-  );
+  ResultFuture<LocalUser> signIn({
+    required String email,
+    required String password,
+  });
 
-  ResultFuture<void> signUp(
-    String email,
-    String fullname,
-    String password,
-  );
+  ResultFuture<void> signUp({
+    required String email,
+    required String fullname,
+    required String password,
+  });
 
   ResultFuture<void> updateUser({
     required UpdateUserAction action,
