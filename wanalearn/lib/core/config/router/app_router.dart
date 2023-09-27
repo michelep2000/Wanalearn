@@ -33,9 +33,5 @@ final goRouter = GoRouter(
       ),
     ),
   ],
-
-  onException: (context, state, router) {
-    print('HELLOOOO');
-  },
- 
+errorBuilder: (_, __) => const UnderConstructionPage(),
 );
