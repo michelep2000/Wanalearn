@@ -94,7 +94,7 @@ void main() {
 
     test(
         'Should return [Left(CacheFailure)] when the call to '
-        'the remote source its unsuccessful', () async {
+        'the local source its unsuccessful', () async {
       // Arrange: means to setup variables to implement the test (mock answer)
       when(() => localDataSource.checkIfUserFirstTime())
           .thenThrow(tCacheException);

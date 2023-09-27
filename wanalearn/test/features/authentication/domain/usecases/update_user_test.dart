@@ -5,7 +5,6 @@ import 'package:wanalearn/core/enums/update_user_action.dart';
 import 'package:wanalearn/core/errors/failure.dart';
 import 'package:wanalearn/features/authentication/domain/entities/user.dart';
 import 'package:wanalearn/features/authentication/domain/repositories/authentication_repository.dart';
-import 'package:wanalearn/features/authentication/domain/usecases/sign_in.dart';
 import 'package:wanalearn/features/authentication/domain/usecases/update_user.dart';
 
 import 'authentication_repository.mock.dart';
