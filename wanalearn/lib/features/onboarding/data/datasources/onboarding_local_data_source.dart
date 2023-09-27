@@ -1,6 +1,5 @@
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:wanalearn/core/errors/exceptions.dart';
-import 'package:wanalearn/core/errors/failure.dart';
 
 abstract class OnboardingLocalDataSource {
   const OnboardingLocalDataSource();

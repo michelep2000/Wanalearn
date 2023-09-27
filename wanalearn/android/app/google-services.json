@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "332296463958",
+    "project_id": "wanalearn-245e0",
+    "storage_bucket": "wanalearn-245e0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332296463958:android:5a224934dd31b70431fdf7",
+        "android_client_info": {
+          "package_name": "com.example.wanalearn"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2u0bS9LSC0ruL0NpUoj5t2sEOxy5FEgY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
