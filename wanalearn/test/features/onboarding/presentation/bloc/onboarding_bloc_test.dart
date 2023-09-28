@@ -2,7 +2,6 @@ import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-import 'package:wanalearn/core/errors/exceptions.dart';
 import 'package:wanalearn/core/errors/failure.dart';
 import 'package:wanalearn/features/onboarding/domain/usecases/cache_user_first_time.dart';
 import 'package:wanalearn/features/onboarding/domain/usecases/check_if_user_first_time.dart';

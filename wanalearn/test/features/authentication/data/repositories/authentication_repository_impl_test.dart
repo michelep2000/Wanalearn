@@ -14,6 +14,7 @@ class MockAuthenticationRemoteDataSource extends Mock
 void main() {
   late AuthenticationRemoteDataSource remoteDataSource;
   late AuthenticactionRepositoryImpl repositoryImpl;
+  
   const tEmail = 'test.email@example.com';
   const tPassword = 'test.password1234';
   const tFullname = 'test.fullname';
@@ -21,7 +22,7 @@ void main() {
     message: 'Servcer Exception',
     statusCode: 500,
   );
-  const tUpdateUserAction = UpdateUserAction.name;
+  const tUpdateUserAction = UpdateUserAction.displayName;
   const tUserModel = LocalUserModel.empty();
 
   setUp(() {

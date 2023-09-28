@@ -13,7 +13,7 @@ void main() {
   late AuthenticationRepository repository;
   late UpdateUser usecase;
   const tUserData = LocalUser.empty();
-  const tUpdateUserAction = UpdateUserAction.name;
+  const tUpdateUserAction = UpdateUserAction.displayName;
 
   setUp(() {
     repository = MockAuthenticacionRepository();

@@ -4,7 +4,6 @@ import 'package:wanalearn/core/extensions/context_extension.dart';
 import 'package:wanalearn/core/resources/colours.dart';
 import 'package:wanalearn/core/resources/fonts.dart';
 import 'package:wanalearn/features/onboarding/domain/entities/page_content.dart';
-import 'package:wanalearn/features/onboarding/domain/usecases/cache_user_first_time.dart';
 import 'package:wanalearn/features/onboarding/presentation/bloc/onboarding_bloc.dart';
 
 class OnboardingBody extends StatelessWidget {

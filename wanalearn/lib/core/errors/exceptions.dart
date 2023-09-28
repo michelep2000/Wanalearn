@@ -23,3 +23,12 @@ class CacheException extends Equatable implements Exception {
   @override
   List<Object?> get props => [message, statusCode];
 }
+
+class DartException extends Equatable implements Exception {
+  const DartException(this.stackTrace);
+
+  final StackTrace stackTrace;
+
+  @override
+  List<Object?> get props => [stackTrace];
+}
